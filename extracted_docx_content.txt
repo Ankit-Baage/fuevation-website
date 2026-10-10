@@ -1,0 +1,672 @@
+Visual Direction
+
+I would avoid looking like a traditional recycling company. Instead, the design should communicate technology, trust, and industrial capability.
+Clean white backgrounds with generous whitespace. 
+Dark charcoal typography with your signature green used sparingly for emphasis. 
+Large editorial-style headings and concise supporting copy. 
+Real photographs of facilities, devices, logistics, and operations rather than stock office scenes. 
+Subtle animations for timelines, counters, and hover interactions. 
+Plenty of breathing room between sections to create a premium feel. 
+
+A broader vision for the website
+One opportunity I see is to make this website do more than present information. It can become the digital front door for the entire MobiGarage ecosystem.
+That means it should not only explain your business but also reinforce your thought leadership, attract enterprise clients, support investor conversations, and improve search visibility. Over time, it can expand to include detailed case studies, white papers, ESG reports, and eventually dedicated sections for each business unit as Fuevation grows beyond MobiGarage. That approach will give you a website that remains relevant for years instead of needing another redesign as the company evolves.
+
+Website Architecture
+Hero — We maximize value across the electronics lifecycle. 
+The $40B Opportunity — The market is massive. 
+The Industry Challenges — Here's what's broken. 
+Reuse First. Recovery Always. — Our philosophy. 
+Introducing Fuevation — Who we are. 
+Our Capabilities — What we do. 
+Lifecycle Intelligence Framework — How we do it. 
+Technology Platform — Our differentiator. 
+Impact — Proof. 
+Trusted By — Credibility. 
+Leadership — The people behind it. 
+Insights — Thought leadership. 
+Let's Build Together — Call to action.
+The homepage should tell about 80% of the story, while the remaining pages provide more depth.
+
+
+
+
+SECTION 1 - Hero
+Layout:
+----------------------------------------------------------
+Small Eyebrow Text
+
+Large Headline
+
+Supporting Paragraph
+
+[Primary CTA]   [Secondary CTA]
+
+Client Logos
+
+↓ Scroll
+----------------------------------------------------------
+
+Eyebrow Text
+TECHNOLOGY • CIRCULAR ECONOMY • VALUE RECOVERY
+
+Headline
+Maximizing Value Across the Electronics Lifecycle
+
+Supporting Copy
+Fuevation, through its flagship platform MobiGarage, enables brands, manufacturers, retailers, insurers, and enterprises to maximize value across the complete electronics lifecycle. By combining technology with refurbishment, liquidation, parts harvesting, reverse supply chains, EPR compliance, and recycling, we transform returned, excess, damaged, and end-of-life assets into measurable economic and environmental value.
+
+Primary CTA
+Talk to Our Experts
+
+Secondary CTA
+Download Company Profile
+Trust Statement
+Working with leading OEMs, manufacturers, retailers, insurers, enterprises, and recycling partners across India's electronics ecosystem.
+Below this, display the logo wall from your company profile
+
+Hero Background
+We can create a slow-moving cinematic video with scenes such as:
+Semiconductor or electronics manufacturing 
+Mobile assembly 
+Engineers testing devices 
+Automated warehouse operations 
+Device diagnostics 
+Refurbishment workstations 
+Reverse logistics 
+Recycling facilities 
+Precious metal recovery 
+Close-ups of smartphones, batteries, and electronic components 
+Overlay it with a subtle dark gradient so the typography remains crisp and premium.
+
+Scroll Cue
+A minimal animated cue at the bottom:
+↓ 
+Discover How We Maximize Recovery
+
+Final Hero Wireframe
+TECHNOLOGY • CIRCULAR ECONOMY • VALUE RECOVERY
+
+Maximizing Value Across the Electronics Lifecycle
+
+Fuevation, through its flagship platform MobiGarage, enables brands, manufacturers, retailers, insurers, and enterprises to maximize value across the complete electronics lifecycle. By combining technology with refurbishment, liquidation, parts harvesting, reverse supply chains, EPR compliance, and recycling, we transform returned, excess, damaged, and end-of-life assets into measurable economic and environmental value.
+
+[ Let's Talk ]        [ Download Company Profile ]
+
+Working with leading OEMs, manufacturers, retailers, insurers, enterprises, and recycling partners across India's electronics ecosystem.
+
+[Logo Wall]
+
+↓
+
+Discover How We Maximize Recovery
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Section 2.1:
+
+The Electronics Industry is Entering a New Era
+The global electronics industry is evolving rapidly. As manufacturing scales, product lifecycles shorten, and sustainability expectations grow, organizations are increasingly challenged to manage what happens after products leave the factory.
+Returns, warranty replacements, excess inventory, damaged products, and end-of-life assets are no longer operational concerns alone-they represent significant financial, environmental, and regulatory opportunities. Organizations that can recover more value from these assets will define the next generation of circular business models.
+
+Then show market statistics
+Big cards.
+
+$40 Billion
+India Electronics Recovery Opportunity
+1.75 Million MT
+Annual E-Waste Generated
+300+
+Electronics Manufacturing Facilities
+80-90%
+Lower Carbon Emissions Through Refurbishment
+10%
+Organized Recycling
+~1 Billion
+Smartphone Users
+
+
+
+
+
+
+
+
+
+Section 2.2 - Industry Challenges
+
+The Challenge Isn't Waste. It's Lost Value.
+Every year, billions of dollars in value are lost because electronic assets follow inefficient recovery pathways. Products that could be reused are recycled. Components that could be recovered are discarded. Reverse supply chains remain fragmented, compliance becomes increasingly complex, and valuable materials often fail to re-enter the circular economy.
+The result is lost revenue, unnecessary waste, increased environmental impact, and missed opportunities for businesses across the electronics ecosystem.
+
+Then create six challenge cards.
+
+Value Leakage
+Returned, excess, and end-of-life products lose value through inefficient recovery decisions.
+Fragmented Reverse Supply Chains
+Multiple disconnected partners increase costs, delays, and operational complexity.
+ESG & Sustainability
+Businesses are expected to deliver measurable environmental impact while maintaining profitability.
+Regulatory Compliance
+EPR, traceability, reporting, and audits continue to become more demanding.
+Data Security
+Enterprise and consumer devices require secure handling and certified data destruction.
+Grey Market Risk
+Improper disposal creates unauthorized resale, counterfeit products, and brand erosion.
+
+
+
+
+
+
+
+
+
+
+SECTION 3 – Introducing Fuevation
+Layout:
+----------------------------------------------------
+WHO WE ARE
+
+Headline
+
+Large Intro
+
+Our Philosophy (Reuse First)
+
+Two-column layout
+
+Left
+Our Story
+
+Right
+What Makes Us Different
+
+----------------------------------------------------
+
+Eyebrow
+WHO WE ARE
+
+Headline
+Building the Future of Electronics Value Recovery
+
+Introduction
+Fuevation is building the operating backbone for the circular electronics economy.
+Through our flagship platform, MobiGarage, we help brands, manufacturers, retailers, insurers, enterprises, and ecosystem partners maximize value across the complete electronics lifecycle. By combining technology, operational expertise, and an integrated recovery network, we transform returned, excess, damaged, and end-of-life electronic assets into measurable business value.
+Our approach goes beyond waste management. We help organizations extend product lifecycles, recover valuable components and materials, improve compliance, strengthen reverse supply chains, and advance their sustainability goals-all through a single, integrated platform.
+
+Our Philosophy
+Reuse First. Recovery Always.
+Every electronic product deserves more than one opportunity to create value.
+Before a product is dismantled or recycled, we believe its highest potential should be explored through reuse, refurbishment, repair, redistribution, or component recovery. Only when reuse is no longer viable should responsible recycling become the next step.
+This philosophy guides every decision we make. It helps our partners recover greater value, reduce waste, conserve natural resources, and build more sustainable businesses.
+Because the most sustainable product is the one that doesn't need to be manufactured again.
+
+I would give this section a distinct background color—perhaps a very light green tint—to make it feel like the heart of the brand.
+
+What Makes Fuevation Different
+Technology-Led Decision Making
+Every asset is evaluated to identify its highest-value recovery pathway.
+Integrated Lifecycle Platform
+One partner across refurbishment, liquidation, parts harvesting, compliance, and recycling.
+Circular Economy by Design
+Reuse is prioritized before material recovery, maximizing both economic and environmental outcomes.
+Nationwide Execution
+Technology-backed operations supported by an extensive network across India's electronics ecosystem.
+
+
+Optional Quote Block
+A powerful statement that reinforces your philosophy:
+"We don't see electronic products as waste. We see untapped value waiting to be recovered."
+
+Transition to the Next Section
+Conclude with a bridge that naturally leads into your capabilities:
+Our philosophy shapes how we work. Our capabilities determine the outcomes we deliver.
+That sets up Section 4 perfectly.
+
+SECTION 4 - How We Create Value
+
+Layout:
+----------------------------------------------------
+HOW WE CREATE VALUE
+
+Headline
+
+Short Introduction
+
+6 Capability Cards
+
+Large CTA
+----------------------------------------------------
+
+Eyebrow
+OUR CAPABILITIES
+
+Headline
+Helping Every Electronic Asset Reach Its Highest Potential
+
+Introduction
+Every electronic asset follows a different journey. Some products can be refurbished and returned to the market. Others are better suited for liquidation, component recovery, or responsible recycling. Our integrated capabilities ensure every asset is directed toward its highest-value recovery pathway, delivering stronger financial outcomes while supporting sustainability and regulatory compliance.
+
+
+
+
+
+
+
+
+Capability Cards
+Instead of putting the service name first, lead with the outcome.
+01
+Extend Product Life
+Refurbishment & Repair
+We restore functional electronics to extend their usable life, maximize resale value, and reduce the environmental impact associated with new manufacturing.
+02
+Unlock Working Capital
+Liquidation Solutions
+Transform excess inventory, customer returns, DOA units, and obsolete stock into recovered value through intelligent remarketing and liquidation strategies.
+
+03
+Maximize Component Recovery
+Parts Harvesting
+Recover reusable components from damaged and end-of-life devices, extending the value of products beyond their first lifecycle.
+
+04
+Recover Critical Materials Responsibly
+Recycling
+When reuse is no longer possible, we recover valuable materials through environmentally responsible recycling processes that support resource conservation and regulatory compliance.
+
+05
+Simplify Compliance
+EPR & Circularity
+Support producers with end-to-end EPR compliance, traceability, reporting, and responsible end-of-life management aligned with evolving environmental regulations.
+
+06
+Build Smarter Reverse Supply Chains
+Collection, Logistics & Recovery
+Design and operate efficient reverse logistics networks that improve visibility, reduce turnaround times, and maximize recovery across the electronics lifecycle.
+
+Bottom Statement
+Every capability is guided by one principle: Reuse First. Recovery Always. By evaluating every asset individually, we identify the recovery pathway that delivers the greatest economic value while minimizing environmental impact.
+
+Visual Direction
+I wouldn't use six identical icon boxes.
+Instead, think of six premium cards with:
+Large number (01–06) 
+Outcome as the main heading 
+Service name as the subtitle 
+One clean illustration or line icon 
+Short description 
+Hover animation 
+The visitor should remember the outcomes, not just the service names.
+
+Transition to the Next Section
+The natural question now becomes:
+"Okay, but how do you decide what happens to each asset?"
+That's where the next section becomes one of the strongest parts of the entire website.
+
+
+
+
+
+
+
+
+
+
+
+Section 5 - The Fuevation Recovery Framework
+
+Headline
+Every Asset Has a Different Journey. Intelligence Determines the Right One.
+
+Introduction
+No two electronic assets are the same. A returned smartphone, an enterprise laptop, excess inventory, or an end-of-life device each presents a different opportunity for value recovery. Our Lifecycle Intelligence Framework evaluates every asset to determine the recovery pathway that delivers the highest economic value while meeting operational, regulatory, and sustainability objectives.
+
+The Framework
+This should be an animated horizontal timeline.
+01 Discover
+Every engagement begins with understanding the assets-their condition, history, quantities, location, and recovery potential.
+
+02 Diagnose
+Technology-enabled diagnostics, grading, and data analysis assess technical condition, residual value, and recovery opportunities.
+
+03 Decide
+Each asset is intelligently routed to its optimal outcome-reuse, refurbishment, liquidation, component recovery, recycling, or compliant disposal.
+This is where your "Reuse First" philosophy comes alive.
+
+04 Execute
+Our integrated network manages collection, logistics, refurbishment, recovery, compliance, and recycling through a single coordinated workflow.
+
+05 Realize
+Clients achieve higher recovery rates, shorter turnaround times, stronger compliance, and measurable ESG impact.
+
+06 Report & Improve
+Every project concludes with transparent reporting, recovery analytics, compliance documentation, and insights that continuously improve future recovery decisions.
+
+Closing statement:
+Every decision begins with one simple question: How can this asset deliver its highest value? By combining technology, operational expertise, and our Reuse First philosophy, we help organizations recover more, waste less, and build truly circular electronics ecosystems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SECTION 6 - Technology Platform
+
+Headline
+Technology That Powers Smarter Recovery Decisions
+
+Introduction
+Technology sits at the core of everything we do. From asset diagnostics and grading to recovery routing, inventory visibility, and compliance reporting, our platform enables data-driven decisions throughout the electronics lifecycle. By combining operational intelligence with deep industry expertise, we help organizations improve efficiency, maximize recovery value, and build transparent circular supply chains.
+
+Core Technology Blocks
+Asset Intelligence
+Digital diagnostics, grading, valuation, and condition assessment.
+
+Recovery Intelligence
+Rule-based and data-driven routing toward the highest-value recovery pathway.
+
+Marketplace & Liquidation
+Connecting recovered assets, refurbished devices, and components with verified buyers.
+
+Compliance & Traceability
+End-to-end visibility, audit trails, and EPR reporting.
+
+Analytics & Insights
+Recovery dashboards, ESG reporting, and performance intelligence.
+
+Operational Visibility
+Track assets, inventory, logistics, and recovery performance across every stage.
+
+
+
+
+Section 7 - Industry Grid
+
+Electronics Manufacturers (OEMs & ODMs)
+EMS Providers
+Retail & Distribution
+Enterprises & IT
+Insurance
+Telecom
+Government & Public Sector
+Recyclers & Material Recovery
+E-commerce & Marketplaces
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SECTION 8 - Why Fuevation
+This should be our  strongest differentiation section.
+
+Headline
+Why Organizations Choose Fuevation
+Instead of generic claims, use proof-backed pillars.
+
+Reuse-First Philosophy
+We maximize product life before material recovery, delivering stronger financial and environmental outcomes.
+
+Integrated Capabilities
+One partner across refurbishment, liquidation, reverse logistics, compliance, parts recovery, and recycling.
+
+Technology-Driven Decisions
+Every asset follows a structured, intelligence-led recovery pathway.
+
+Nationwide Execution
+Pan-India operational capability supported by trusted ecosystem partners.
+
+Sustainability by Design
+Every engagement contributes to measurable circular economy outcomes and ESG goals.
+
+Trusted Relationships
+Working with leading OEMs, manufacturers, retailers, insurers, and enterprises across India.
+
+
+
+
+
+
+
+Section 9 – Our Impact
+Headline
+Creating Measurable Value for Businesses and the Planet
+
+Supporting Copy
+Every recovered asset creates value beyond financial returns. By extending product lifecycles, recovering critical materials, and building efficient reverse supply chains, we help organizations improve operational performance while contributing to a more sustainable electronics ecosystem.
+
+Impact Metrics
+These should be large animated counters.
+
+500,000+
+Orders Processed Every Month
+82,000 MTPA
+Installed Recycling Capacity
+6
+Refurbishment Centres Across India
+7,000+
+MT Carbon Offset
+15 Million+
+Litres of Water Conserved
+1,000+
+Tonnes of E-Waste Diverted
+10 Lakh+
+Devices Processed Through Parts Recovery
+Pan India
+Operations & Partner Network
+
+
+At the bottom:
+Every number represents our commitment to one philosophy — Reuse First. Recovery Always.
+
+SECTION 10 — Trusted Across the Electronics Ecosystem
+This section should be almost entirely visual.
+Headline
+Trusted by Industry Leaders
+We work alongside leading OEMs, manufacturers, retailers, insurers, enterprises, logistics providers, and recycling partners to build stronger, more circular electronics value chains.
+
+Below that:
+Large responsive logo wall.
+No descriptions.
+No marketing copy.
+The logos speak for themselves.
+
+Vaibhav Kapoor
+Co-Founder & Chief Executive Officer
+Leads strategy, partnerships, technology, fundraising, and long-term vision, with a focus on building India's leading electronics lifecycle platform.
+
+Pulkit Kapoor
+Co-Founder & Chief Operating Officer
+Leads operations, procurement, refurbishment, supply chain, and execution, ensuring operational excellence across the recovery ecosystem.
+
+Also, add investors backed by: STPI, SOSV, Shastra, Artesian, IPV and notable angels and HNIs.
+
+
+
+
+
+
+
+
+
+
+SECTION 12 — Insights
+This section is strategically important for SEO and thought leadership.
+
+Headline
+Insights Shaping the Future of Circular Electronics
+
+Introduction
+We believe knowledge accelerates change. Our insights explore the trends, technologies, regulations, and business strategies shaping the future of electronics, sustainability, and the circular economy.
+
+Display three featured articles with images.
+Examples:
+Why Reuse Creates More Value Than Recycling 
+The Future of Electronics Circular Economy in India 
+Understanding EPR Beyond Compliance 
+Below them:
+Explore All Insights →
+This section will grow as you publish LinkedIn content and convert it into articles.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SECTION 13 — Final Call to Action
+This is the most important CTA on the website.
+Keep it clean.
+No long paragraphs.
+No sales language.
+
+Headline
+Let's Build the Future of Electronics Together
+
+Supporting Copy
+Whether you're looking to recover greater value from electronic assets, strengthen your reverse supply chain, achieve regulatory compliance, or advance your sustainability goals, we're ready to help.
+Let's start the conversation.
+
+Buttons:
+Talk to Our Experts
+Download Company Profile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOOTER
+About
+Fuevation is a technology-driven electronics lifecycle company focused on maximizing value through refurbishment, liquidation, parts harvesting, reverse logistics, EPR compliance, and recycling.
+Reuse First. Recovery Always.
+
+Quick Links
+Home 
+About 
+Solutions 
+Industries 
+Insights 
+Contact
+
+Solutions
+Refurbishment 
+Liquidation 
+Parts Harvesting 
+Reverse Logistics 
+EPR Compliance 
+Recycling
+
+Contact
+Corporate Office
+Email
+Phone
+LinkedIn
+Download Company Profile
+
+
+
+
+Final Structure
+Hero
+↓
+The Electronics Industry is Changing (Market)
+↓
+The Challenges We Solve
+↓
+Introducing Fuevation
+↓
+Reuse First. Recovery Always.
+↓
+Our Solutions
+↓
+Lifecycle Intelligence Framework
+↓
+Technology Platform
+↓
+Industries
+↓
+Impact
+↓
+Trusted By
+↓
+Leadership
+↓
+Insights
+↓
+CTA

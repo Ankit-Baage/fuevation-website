@@ -1,0 +1,613 @@
+/* =============================================
+   ELECTRONICS REFURBISHMENT PAGE
+   ============================================= */
+
+/* ===== Page Wrapper ===== */
+.refurb-page {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Breadcrumb ===== */
+.breadcrumb {
+  background: var(--color-bg-white);
+  padding: 14px 2rem;
+  padding-top: 74px;
+}
+
+.breadcrumb-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+   padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+.breadcrumb a {
+  color: var(--color-text-muted);
+  transition: color 0.3s ease;
+}
+.breadcrumb a:hover { color: var(--color-accent); }
+.breadcrumb .sep { color: var(--color-border); }
+.breadcrumb .current { color: #2f3567; font-weight: 500; }
+/* ===== Hero Section ===== */
+
+.refurb-hero {
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.refurb-hero-inner {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: stretch;
+}
+
+/* LEFT SIDE */
+
+.refurb-hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.refurb-hero-content h1 {
+  font-family: var(--font-family-headings);
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-primary);
+  margin: 0 0 18px;
+  max-width: 840px;
+  letter-spacing: -1px;
+}
+
+.refurb-hero-content p {
+  max-width: 470px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #6b7280;
+  margin: 19px 0 20px;
+}
+
+/* BUTTONS */
+
+.refurb-hero-actions {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 40px;
+  width: 100%;
+}
+
+/* Talk to Our Experts */
+
+.refurb-hero-actions .expert-contact-btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Explore Solutions */
+
+.refurb-hero-actions .btn-outline {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-border);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* transition: var(--transition-fast); */
+}
+
+.refurb-hero-actions .btn-outline:hover {
+ border-color: #ff6f3f;
+}
+
+/* RIGHT IMAGE */
+
+.refurb-hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.refurb-hero-img-box-img {
+  width: 100%;
+  height: 100%;
+  max-height: 411px;
+  display: block;
+  object-fit: contain;
+
+  animation: donutFloat 6s ease-in-out infinite;
+
+  /* filter: drop-shadow(0 0 40px rgba(255, 111, 63, 0.45)); */
+
+  will-change: transform;
+  transform-origin: center center;
+  backface-visibility: hidden;
+}
+/* ===== The Business Problem ===== */
+.refurb-problem-section {
+  padding: 1rem 2rem;
+  background: var(--color-bg-light);
+}
+/* .refurb-problem-inner-list{
+ max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+} */
+.refurb-problem-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.refurb-problem-inner .eyebrow {
+  font-family: var(--font-family-headings);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.refurb-problem-inner .section-title {
+  font-family: var(--font-family-headings);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--color-primary);
+/* padding-left: 8rem; */
+  margin-bottom: 1.5rem;
+}
+.refurb-problem-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* ===== Our Approach ===== */
+.refurb-approach-section {
+  padding: 1rem 2rem;
+  background: var(--color-bg-white);
+}
+.refurb-approach-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.refurb-approach-inner .eyebrow {
+  font-family: var(--font-family-headings);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.refurb-approach-inner .section-title {
+  font-family: var(--font-family-headings);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+.refurb-approach-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* ===== Solution Scope ===== */
+.refurb-scope-section {
+  padding: 1rem 0;
+  background: var(--color-bg-light);
+}
+.refurb-section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+.refurb-section-header .eyebrow {
+  font-family: var(--font-family-headings);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.refurb-section-header .section-title {
+  font-family: var(--font-family-headings);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--color-primary);
+  margin-bottom: 0;
+}
+.refurb-scope-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+.refurb-scope-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 32px 24px;
+  text-align: center;
+}
+.refurb-scope-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.refurb-scope-icon svg,
+.refurb-scope-icon img {
+  width: 58px;
+  height: 58px;
+  color: var(--color-accent);
+  object-fit: contain;
+}
+.refurb-scope-card h3 {
+  font-family: var(--font-family-headings);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* ===== Business Outcomes ===== */
+.refurb-outcomes-section {
+  padding: 1rem 0;
+  background: var(--color-bg-white);
+}
+.refurb-outcomes-grid {
+ max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.refurb-outcome-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 24px 16px;
+}
+.refurb-outcome-icon {
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.refurb-outcome-icon svg,
+.refurb-outcome-icon img {
+  width: 58px;
+  height: 58px;
+  color: var(--color-accent);
+  object-fit: contain;
+}
+.refurb-outcome-item h3 {
+  font-family: var(--font-family-headings);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* ===== Who This Is For ===== */
+.refurb-industries-section {
+  padding: 1rem 0;
+  background: var(--color-bg-light);
+}
+.refurb-industries-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+.refurb-industries-grid .refurb-industry-card {
+  min-width: 120px;
+  flex: 0 0 calc((100% - 5 * 0.8rem) / 6);
+  max-width: calc((100% - 5 * 0.8rem) / 6);
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  transition: var(--transition-medium);
+}
+.refurb-industry-icon {
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.refurb-industry-icon svg,
+.refurb-industry-icon img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+.refurb-industry-card h3 {
+  font-family: var(--font-family-headings);
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+/* ===== Related Solutions ===== */
+.refurb-related-section {
+  padding: 1rem 0;
+  background: var(--color-bg-white);
+}
+.refurb-related-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.refurb-related-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 28px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: var(--transition-medium);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.refurb-related-card:hover {
+  border-color: var(--color-accent);
+}
+.refurb-related-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.refurb-related-icon svg,
+.refurb-related-icon img {
+  width: 58px;
+  height: 58px;
+  color: var(--color-accent);
+  object-fit: contain;
+}
+.refurb-related-card h3 {
+  font-family: var(--font-family-headings);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+/* ===== FAQ ===== */
+.refurb-faq-section {
+  padding: 1rem 0;
+  background: var(--color-bg-light);
+}
+.refurb-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+.refurb-faq-item {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+.refurb-faq-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-family-headings);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.refurb-faq-toggle svg {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  color: var(--color-accent);
+  transition: transform 0.3s ease;
+}
+.refurb-faq-item.active .refurb-faq-toggle svg {
+  transform: rotate(180deg);
+}
+.refurb-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.refurb-faq-item.active .refurb-faq-answer {
+  max-height: 200px;
+}
+.refurb-faq-answer p {
+  padding: 0 24px 20px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* ===== Final CTA ===== */
+.refurb-cta-section {
+  padding: 3rem 0;
+  background: var(--color-bg-white);
+}
+.refurb-cta-inner {
+ max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.refurb-cta-inner h2 {
+  font-family: var(--font-family-headings);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+.refurb-cta-inner p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+.refurb-cta-inner .btn-primary {
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  box-shadow: 0 8px 24px rgba(255, 111, 63, 0.25);
+  padding: 14px 28px;
+  border-radius: var(--border-radius-sm);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  /* transition: var(--transition-fast); */
+}
+.refurb-cta-inner .btn-primary:hover {
+  background-color: var(--primary-orange-hover);
+  /* transform: translateY(-2px); */
+}
+
+/* ===== Footer Sticky ===== */
+footer {
+  margin-top: auto;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .refurb-hero-inner { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+  .refurb-hero-content p { margin-left: auto; margin-right: auto; }
+  .refurb-hero-actions { justify-content: center; }
+  .refurb-hero-visual { margin-top: 0; max-height: 500px; }
+  .refurb-hero-img-box img { max-height: 500px; }
+  .refurb-scope-grid { display: flex; flex-wrap: wrap; justify-content: center; }
+  .refurb-scope-card { flex: 0 0 calc((100% - 2 * 24px) / 3); max-width: calc((100% - 2 * 24px) / 3); }
+  .refurb-outcomes-grid { display: flex; flex-wrap: wrap; justify-content: center; }
+  .refurb-outcome-item { flex: 0 0 calc((100% - 2 * 20px) / 3); max-width: calc((100% - 2 * 20px) / 3); }
+  .refurb-industries-grid .refurb-industry-card { flex: 0 0 calc((100% - 2 * 0.8rem) / 3); max-width: calc((100% - 2 * 0.8rem) / 3); }
+  .refurb-related-grid { display: flex; flex-wrap: wrap; justify-content: center; }
+  .refurb-related-card { flex: 0 0 calc((100% - 2 * 20px) / 3); max-width: calc((100% - 2 * 20px) / 3); }
+}
+
+@media (max-width: 768px) {
+  /* .refurb-hero { padding: calc(var(--header-height) + 10px) 0 40px; } */
+  .refurb-hero-inner { display: flex; flex-direction: column; }
+  .refurb-hero-visual { order: -1; margin-bottom: 30px; margin-top: 0; max-height: 380px; }
+  .refurb-hero-img-box img { max-height: 380px; }
+  .refurb-hero-content { order: 1; }
+  .refurb-hero-content h1 { font-size: 2.2rem; }
+  .refurb-problem-inner { text-align: left; }
+  .refurb-approach-section { padding: 1rem 1.5rem; }
+  .refurb-related-card { flex: 0 0 calc((100% - 20px) / 2); max-width: calc((100% - 20px) / 2); }
+  .refurb-industries-grid .refurb-industry-card { flex: 0 0 calc((100% - 0.8rem) / 2); max-width: calc((100% - 0.8rem) / 2); }
+  .refurb-scope-card { flex: 0 0 calc((100% - 24px) / 2); max-width: calc((100% - 24px) / 2); }
+  .refurb-outcome-item { flex: 0 0 calc((100% - 20px) / 2); max-width: calc((100% - 20px) / 2); }
+}
+
+@media (max-width: 480px) {
+  .refurb-hero-inner { padding: 0 20px; }
+  .refurb-hero-visual { order: -1; margin-bottom: 24px; margin-top: 0; max-height: 380px; }
+  .refurb-hero-img-box img { max-height: 380px; }
+  .refurb-hero-content { order: 1; }
+  .refurb-hero-content h1 { font-size: 1.8rem; }
+  .refurb-hero-actions { flex-direction: column; align-items: stretch; }
+  .refurb-hero-actions .btn { width: 100%; justify-content: center; }
+  .refurb-scope-card { flex: 0 0 calc((100% - 24px) / 2); max-width: calc((100% - 24px) / 2); }
+  .refurb-outcome-item { flex: 0 0 calc((100% - 20px) / 2); max-width: calc((100% - 20px) / 2); }
+  .refurb-industries-grid .refurb-industry-card { flex: 0 0 calc((100% - 0.8rem) / 2); max-width: calc((100% - 0.8rem) / 2); min-width: unset; }
+  .refurb-related-card { flex: 0 0 calc((100% - 20px) / 2); max-width: calc((100% - 20px) / 2); }
+  .refurb-approach-section { padding: 1rem; }
+}
+
+
+
+/* ===== Hide Breadcrumb on Phone ===== */
+@media (max-width: 767px) {
+      .breadcrumb {
+      visibility: hidden;
+      height: 74px;
+      padding: 0;
+      border-bottom: none;
+      overflow: hidden;
+    }
+
+  .breadcrumb-inner {
+    display: none;
+  }
+}
+
