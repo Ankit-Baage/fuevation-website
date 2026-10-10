@@ -71,7 +71,9 @@
 
 /* XL: "Battery Recovery" / "&" / "Responsible Recycling" on separate lines */
 @media (min-width: 1281px) {
+  .br-hero-content h1 { width: fit-content; }
   .br-hero-content h1 .br-h1-line { display: block; }
+  .br-hero-content h1 .br-h1-amp { text-align: center; }
 }
 
 .br-hero-content p {
