@@ -586,8 +586,8 @@ footer {
 
 
 
-/* ===== Hide Breadcrumb on Phone ===== */
-@media (max-width: 767px) {
+/* ===== Hide Breadcrumb on Phone & Tablet ===== */
+@media (max-width: 1024px) {
       .breadcrumb {
       visibility: hidden;
       height: 74px;
@@ -601,3 +601,10 @@ footer {
   }
 }
 
+/* ===== Breadcrumb on Desktop: no side padding ===== */
+@media (min-width: 1025px) {
+  .breadcrumb-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
