@@ -8,14 +8,13 @@
 // GA4_MEASUREMENT_ID is pushed to the dataLayer so the GTM
 // Google tag can read it via a Data Layer Variable.
 //
-// TODO: replace both placeholder IDs before go-live.
-// Also replace GTM-XXXXXXX in the <noscript> iframe on every page.
+// The GTM ID is also used in the <noscript> iframe on every page.
 // =====================================================
 (function () {
   "use strict";
 
-  var GTM_ID = "GTM-XXXXXXX";
-  var GA4_MEASUREMENT_ID = "G-XXXXXXXXXX";
+  var GTM_ID = "GTM-MPVXSRQX";
+  var GA4_MEASUREMENT_ID = "G-CE972TT69Y";
 
   window.dataLayer = window.dataLayer || [];
 
@@ -47,7 +46,7 @@
   function pageType() {
     if (solutionSlug) return "solution";
     if (/solutions(\.html)?\/?$/.test(path)) return "solutions_hub";
-    if (/(^\/$|index\.html$)/.test(path)) return "home";
+    if (/(\/$|index\.html$)/.test(path)) return "home";
     return "other";
   }
 
