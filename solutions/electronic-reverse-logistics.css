@@ -555,6 +555,7 @@ footer {
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
   .rl-hero-inner { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+  .rl-hero-visual { order: -1; }
   .rl-hero-content p { margin-left: auto; margin-right: auto; }
   .rl-hero-actions { justify-content: center; }
   .rl-hero-visual { margin-top: 0; max-height: 500px; }

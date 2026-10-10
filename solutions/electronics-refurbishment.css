@@ -551,6 +551,7 @@ footer {
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
   .refurb-hero-inner { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+  .refurb-hero-visual { order: -1; }
   .refurb-hero-content p { margin-left: auto; margin-right: auto; }
   .refurb-hero-actions { justify-content: center; }
   .refurb-hero-visual { margin-top: 0; max-height: 500px; }

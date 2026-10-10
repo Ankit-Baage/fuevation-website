@@ -541,6 +541,7 @@ footer {
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
   .epr-hero-inner { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+  .epr-hero-visual { order: -1; }
   .epr-hero-content p { margin-left: auto; margin-right: auto; }
   .epr-hero-actions { justify-content: center; }
   .epr-hero-visual { margin-top: 0; max-height: 500px; }

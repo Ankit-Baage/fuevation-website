@@ -350,6 +350,25 @@ header.scrolled {
         gap: 40px;
     }
 
+    /* Tablet: stack hero, image on top (same as mobile) */
+    #hero .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-right {
+        order: 1;
+    }
+
+    .hero-left {
+        order: 2;
+        text-align: center;
+        align-items: center;
+    }
+
+    #hero .hero-actions {
+        justify-content: center;
+    }
+
     .hero-title {
         font-size: 2.5rem;
         max-width: 100%;

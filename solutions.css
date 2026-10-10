@@ -290,6 +290,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .sol-hero-right {
+    order: -1;
+    margin-bottom: 30px;
+  }
   .sol-hero-img {
     max-width: 360px;
     /* max-height: 500px; */
@@ -313,6 +317,7 @@
   .sol-hero-right {
     flex-direction: column;
     margin-bottom: 30px;
+    margin-top: 0;
   }
   .sol-hero-left h1 {
     font-size: 2.2rem;

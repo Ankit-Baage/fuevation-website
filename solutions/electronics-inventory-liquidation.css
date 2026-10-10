@@ -536,6 +536,7 @@ footer {
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
   .liq-hero-inner { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+  .liq-hero-visual { order: -1; }
   .liq-hero-content p { margin-left: auto; margin-right: auto; }
   .liq-hero-actions { justify-content: center; }
   .liq-hero-visual { margin-top: 0; max-height: 500px; }
