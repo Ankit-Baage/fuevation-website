@@ -612,11 +612,3 @@ footer {
     display: none;
   }
 }
-
-/* ===== Breadcrumb on Desktop: no side padding ===== */
-@media (min-width: 1025px) {
-  .breadcrumb-inner {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}

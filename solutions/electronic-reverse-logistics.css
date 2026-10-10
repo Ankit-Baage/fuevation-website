@@ -11,7 +11,7 @@
 /* ===== Breadcrumb ===== */
 .breadcrumb {
   background: var(--color-bg-white);
-  padding: 14px 2rem;
+  padding: 14px 0;
   padding-top: 74px;
 }
 
@@ -615,13 +615,5 @@ footer {
 
   .breadcrumb-inner {
     display: none;
-  }
-}
-
-/* ===== Breadcrumb on Desktop: no side padding ===== */
-@media (min-width: 1025px) {
-  .breadcrumb-inner {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
