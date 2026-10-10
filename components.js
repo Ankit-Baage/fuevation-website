@@ -82,9 +82,16 @@
 // COMPONENTS.JS — Subfolder-Safe & SEO-Optimized Nav
 // =====================================================
 (async function () {
+  // Site base URL derived from this script's location (components.js lives at site root),
+  // so the site works at a domain root or under a subpath like /fuevation-website/
+  const scriptSrc = (document.currentScript && document.currentScript.src) ||
+    new URL("components.js", window.location.href).href;
+  const BASE = new URL("./", scriptSrc).href;
+  const basePath = new URL(BASE).pathname;
+
   // Normalize current path to check for home route
   const currentPath = window.location.pathname;
-  const isIndex = currentPath === "/" || currentPath === "/index.html";
+  const isIndex = currentPath === basePath || currentPath === basePath + "index.html";
 
   async function loadComponent(selector, file) {
     try {
@@ -98,6 +105,9 @@
       if (isIndex) {
         html = html.replace(/href="\/index\.html#/g, 'href="#');
       }
+
+      // Resolve root-relative links against the site base
+      html = html.replace(/(href|src)="\/(?=[A-Za-z])/g, `$1="${BASE}`);
 
       const el = document.querySelector(selector);
       if (el) {
@@ -116,7 +126,7 @@
       const linkPath = new URL(link.href, window.location.origin).pathname;
       
       // Compare path exactness or trailing-slash match
-      if (linkPath === currentPath || (currentPath !== "/" && linkPath !== "/" && currentPath.startsWith(linkPath))) {
+      if (linkPath === currentPath || (currentPath !== basePath && linkPath !== basePath && currentPath.startsWith(linkPath))) {
         link.classList.add("active");
       } else {
         link.classList.remove("active");
@@ -124,11 +134,11 @@
     });
   }
 
-  // Load components using root-relative paths
+  // Load components relative to the site base
   await Promise.all([
-    loadComponent("#site-header", "/components/header.html"),
-    loadComponent("#site-footer", "/components/footer.html"),
-    loadComponent("#cta-section", "/components/cta.html")
+    loadComponent("#site-header", BASE + "components/header.html"),
+    loadComponent("#site-footer", BASE + "components/footer.html"),
+    loadComponent("#cta-section", BASE + "components/cta.html")
   ]);
 
   // =====================================================
