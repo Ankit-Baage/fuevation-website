@@ -94,6 +94,8 @@
   const isIndex = currentPath === basePath || currentPath === basePath + "index.html";
 
   async function loadComponent(selector, file) {
+    // Skip the request entirely when the page has no slot for this component
+    if (!document.querySelector(selector)) return;
     try {
       // Root-relative path guarantees correct fetch regardless of subfolder depth
       const res = await fetch(file);
