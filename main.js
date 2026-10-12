@@ -184,8 +184,14 @@ document.addEventListener("components-loaded", function () {
   var headerHeight = 100;
   var isClickNav = false;
   var clickTimeout;
+  var activeId = "";
+  var currentId = "";
+  var observer;
+  var resizeTimeout;
 
   function setActive(id) {
+    if (id === activeId) return;
+    activeId = id;
     navLinks.forEach(function (link) {
       link.classList.remove("active");
       var href = link.getAttribute("href");
@@ -199,18 +205,25 @@ document.addEventListener("components-loaded", function () {
     });
   }
 
-  function onScroll() {
-    if (isClickNav) return;
-    var scrollPos = window.scrollY + headerHeight + 100;
-    var current = "";
+  // Watch a 1px line (headerHeight + 100px below the viewport top) with
+  // IntersectionObserver instead of reading offsetTop/offsetHeight on every
+  // scroll, which forced a synchronous layout (reflow).
+  function observeSections() {
+    if (observer) observer.disconnect();
+    var line = headerHeight + 100;
+    var bottom = -Math.max(window.innerHeight - line - 1, 0);
+    observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) currentId = entry.target.id;
+        });
+        if (!isClickNav && currentId) setActive(currentId);
+      },
+      { rootMargin: -line + "px 0px " + bottom + "px 0px" }
+    );
     sections.forEach(function (section) {
-      var top = section.offsetTop;
-      var height = section.offsetHeight;
-      if (scrollPos >= top && scrollPos < top + height) {
-        current = section.getAttribute("id");
-      }
+      observer.observe(section);
     });
-    if (current) setActive(current);
   }
 
   navLinks.forEach(function (link) {
@@ -231,7 +244,7 @@ document.addEventListener("components-loaded", function () {
             }
             clickTimeout = setTimeout(function () {
               isClickNav = false;
-              onScroll();
+              if (currentId) setActive(currentId);
             }, 800);
           }
         }
@@ -239,8 +252,12 @@ document.addEventListener("components-loaded", function () {
     });
   });
 
-  window.addEventListener("scroll", onScroll);
-  onScroll();
+  if (!sections.length || !("IntersectionObserver" in window)) return;
+  observeSections();
+  window.addEventListener("resize", function () {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(observeSections, 150);
+  });
 });
 // SECTION 1: Modal Triggers + Lead Capture Forms + Scroll Spy
 document.addEventListener("DOMContentLoaded", () => {
