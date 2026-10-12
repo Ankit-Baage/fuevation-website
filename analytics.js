@@ -1,8 +1,8 @@
 // =====================================================
 // ANALYTICS.JS — Google Tag Manager + GA4 event tracking
 // =====================================================
-// Load synchronously, as high in <head> as possible:
-//   <script src="/analytics.js"></script>
+// Load async, as high in <head> as possible (not render-blocking):
+//   <script src="/analytics.js" async></script>
 //
 // GA4 is configured INSIDE GTM (Google tag), not loaded here.
 // GA4_MEASUREMENT_ID is pushed to the dataLayer so the GTM
