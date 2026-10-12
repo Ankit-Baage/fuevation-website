@@ -602,7 +602,7 @@ transition: var(--transition-fast);
 ```html
 <div class="why-bullet-item">
   <div class="why-check">
-    <img class="why-check-icon" src="./assets/simplify compliance.svg">
+    <img class="why-check-icon" src="./assets/simplify-compliance.svg">
   </div>
   <div class="why-bullet-content">
     <h4>Title</h4>
