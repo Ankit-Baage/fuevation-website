@@ -58,7 +58,7 @@
   ).href;
 
   var MAIL_ICON = new URL(
-    "assets/mail icon.svg",
+    "assets/mail-icon.svg",
     WEBSITE_ROOT
   ).href;
 

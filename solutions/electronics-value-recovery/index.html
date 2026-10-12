@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 <!-- Google Tag Manager + GA4 (IDs set in /analytics.js) -->
-<script src="../../analytics.js"></script>
+<script src="../../analytics.js" async></script>
 <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,22 +11,21 @@
 <meta property="og:description" content="Recover maximum value from excess, returned, damaged and end-of-life electronics through refurbishment, liquidation, parts recovery and recycling.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://fuevation.com/solutions/electronics-value-recovery/">
-<meta property="og:image" content="https://fuevation.com/assets/Maximizing%20Value%20Across%20the%20Electronics.webp">
+<meta property="og:image" content="https://fuevation.com/assets/maximizing-value-across-the-electronics.webp">
 <meta property="og:image:alt" content="Electronics Lifecycle Visual Donut">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Electronics Value Recovery Solutions | Fuevation">
 <meta name="twitter:description" content="Recover maximum value from excess, returned, damaged and end-of-life electronics through refurbishment, liquidation, parts recovery and recycling.">
-<meta name="twitter:image" content="https://fuevation.com/assets/Maximizing%20Value%20Across%20the%20Electronics.webp">
+<meta name="twitter:image" content="https://fuevation.com/assets/maximizing-value-across-the-electronics.webp">
 <meta name="twitter:image:alt" content="Electronics Lifecycle Visual Donut">
     <title>Electronics Value Recovery Solutions | Fuevation</title>
     <meta name="description" content="Recover maximum value from excess, returned, damaged and end-of-life electronics through refurbishment, liquidation, parts recovery and recycling." />
  <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" /></noscript>
     <link rel="stylesheet" href="../../index.css?v=2" />
     <link rel="stylesheet" href="../electronics-value-recovery.css" />
 <script type="application/ld+json">
@@ -213,7 +212,16 @@
     <div class="evr-hero-visual">
 
       <img
-        src="../../assets/Maximizing Value Across the Electronics.webp"
+        src="../../assets/maximizing-value-across-the-electronics-600.webp"
+        srcset="
+          ../../assets/maximizing-value-across-the-electronics-400.webp 400w,
+          ../../assets/maximizing-value-across-the-electronics-600.webp 600w,
+          ../../assets/maximizing-value-across-the-electronics-850.webp 850w
+        "
+        sizes="(max-width: 767px) 300px, (max-width: 1024px) 380px, 500px"
+        width="850"
+        height="850"
+        fetchpriority="high"
         alt="Electronics Lifecycle Visual Donut"
         class="evr-hero-donut-img"
 
@@ -255,37 +263,37 @@
           <div class="evr-scope-grid">
             <div class="evr-scope-card">
               <div class="evr-scope-icon">
-                <img src="../../assets/excess and obsolete inventory-value.svg" alt="Excess inventory management"/>
+                <img src="../../assets/excess-and-obsolete-inventory-value.svg" alt="Excess inventory management"/>
               </div>
               <h3>Excess &amp; obsolete inventory</h3>
             </div>
             <div class="evr-scope-card">
               <div class="evr-scope-icon">
-                <img src="../../assets/returned and damaged electronics-value.svg" alt="Returned and Damaged Electronics"/>
+                <img src="../../assets/returned-and-damaged-electronics-value.svg" alt="Returned and Damaged Electronics"/>
               </div>
               <h3>Returned &amp; damaged electronics</h3>
             </div>
             <div class="evr-scope-card">
               <div class="evr-scope-icon">
-                <img src="../../assets/refurbishment opportunities-value.svg" alt="Electronic Refurbishment"/>
+                <img src="../../assets/refurbishment-opportunities-value.svg" alt="Electronic Refurbishment"/>
               </div>
               <h3>Refurbishment opportunities</h3>
             </div>
             <div class="evr-scope-card">
               <div class="evr-scope-icon">
-                <img src="../../assets/inventory liquidations.svg" alt="Inventory Liquidation"/>
+                <img src="../../assets/inventory-liquidations.svg" alt="Inventory Liquidation"/>
               </div>
               <h3>Inventory liquidation</h3>
             </div>
             <div class="evr-scope-card">
               <div class="evr-scope-icon">
-                <img src="../../assets/parts and component recovery-value.svg" alt="Maximize Component Recovery"/>
+                <img src="../../assets/parts-and-component-recovery-value.svg" alt="Maximize Component Recovery"/>
               </div>
               <h3>Parts &amp; component recovery</h3>
             </div>
             <div class="evr-scope-card">
               <div class="evr-scope-icon">
-                <img src="../../assets/end of life electronics.svg" alt="End-of-Life Electronics"/>
+                <img src="../../assets/end-of-life-electronics.svg" alt="End-of-Life Electronics"/>
               </div>
               <h3>End-of-life electronics</h3>
             </div>
@@ -303,31 +311,31 @@
           <div class="evr-outcomes-grid">
             <div class="evr-outcome-item">
               <div class="evr-outcome-icon">
-                <img src="../../assets/higher recovery potential.svg" alt="Higher Recovery Potential"/>
+                <img src="../../assets/higher-recovery-potential.svg" alt="Higher Recovery Potential"/>
               </div>
               <h3>Higher recovery potential</h3>
             </div>
             <div class="evr-outcome-item">
               <div class="evr-outcome-icon">
-                <img src="../../assets/reduce inventory and disposal pressure.svg" alt="Reduce Inventory & Disposal Pressure"/>
+                <img src="../../assets/reduce-inventory-and-disposal-pressure.svg" alt="Reduce Inventory & Disposal Pressure"/>
               </div>
               <h3>Reduced inventory and disposal pressure</h3>
             </div>
             <div class="evr-outcome-item">
               <div class="evr-outcome-icon">
-                <img src="../../assets/extend product life.svg" alt="Extend Product Life"/>
+                <img src="../../assets/extend-product-life.svg" alt="Extend Product Life"/>
               </div>
               <h3>Extended product lifecycles</h3>
             </div>
             <div class="evr-outcome-item">
               <div class="evr-outcome-icon">
-                <img src="../../assets/better visibility across programs .svg" alt="Better Visibility Across Recovery Programs"  loading="lazy"/>
+                <img src="../../assets/better-visibility-across-programs.svg" alt="Better Visibility Across Recovery Programs"  loading="lazy"/>
               </div>
               <h3>Better visibility across recovery programs</h3>
             </div>
             <div class="evr-outcome-item">
               <div class="evr-outcome-icon">
-                <img src="../../assets/Responsible End-of-Life Management.svg"    loading="lazy" alt="Responsible End-of-Life Management"/>
+                <img src="../../assets/responsible-end-of-life-management.svg"    loading="lazy" alt="Responsible End-of-Life Management"/>
               </div>
               <h3>Responsible end-of-life management</h3>
             </div>
@@ -351,13 +359,13 @@
             </div>
             <div class="evr-industry-card">
               <div class="evr-industry-icon">
-                <img src="../../assets/OEMs ODMs EMS.svg" alt="OEMs ODMs EMS"  loading="lazy"/>
+                <img src="../../assets/oems-odms-ems.svg" alt="OEMs ODMs EMS"  loading="lazy"/>
               </div>
               <h3>OEMs / ODMs / EMS</h3>
             </div>
             <div class="evr-industry-card">
               <div class="evr-industry-icon">
-                <img src="../../assets/Retailers and Distributors.svg" alt="Retailers and Distributors"  loading="lazy"/>
+                <img src="../../assets/retailers-and-distributors.svg" alt="Retailers and Distributors"  loading="lazy"/>
               </div>
               <h3>Retailers &amp; distributors</h3>
             </div>
@@ -369,7 +377,7 @@
             </div>
             <div class="evr-industry-card">
               <div class="evr-industry-icon">
-                <img src="../../assets/telecom and technology.svg" alt="Telecom and Technology"  loading="lazy"/>
+                <img src="../../assets/telecom-and-technology.svg" alt="Telecom and Technology"  loading="lazy"/>
               </div>
               <h3>Telecom &amp; technology</h3>
             </div>
@@ -393,31 +401,31 @@
           <div class="evr-related-grid">
             <a href="../inventory-liquidation/" class="evr-related-card">
               <div class="evr-related-icon">
-              <img src="../../assets/inventory liquidations.svg" alt="Excess inventory management"  loading="lazy"/>
+              <img src="../../assets/inventory-liquidations.svg" alt="Excess inventory management"  loading="lazy"/>
               </div>
               <h3>Inventory Liquidation</h3>
             </a>
             <a href="../electronics-refurbishment/" class="evr-related-card">
               <div class="evr-related-icon">
-              <img src="../../assets/electronic refurbishment.svg" alt="Electronics Refurbishment"  loading="lazy"/>
+              <img src="../../assets/electronic-refurbishment.svg" alt="Electronics Refurbishment"  loading="lazy"/>
               </div>
               <h3>Electronics Refurbishment</h3>
             </a>
             <a href="../excess-inventory-management/" class="evr-related-card">
               <div class="evr-related-icon">
-               <img src="../../assets/excess inventory management.svg" alt="Excess inventory management"  loading="lazy"/>
+               <img src="../../assets/excess-inventory-management.svg" alt="Excess inventory management"  loading="lazy"/>
               </div>
               <h3>Excess Inventory Management</h3>
             </a>
             <a href="../eol-inventory-management/" class="evr-related-card">
               <div class="evr-related-icon">
-               <img src="../../assets/EOL inventory management.svg" alt="EOL Inventory Management"  loading="lazy"/>
+               <img src="../../assets/eol-inventory-management.svg" alt="EOL Inventory Management"  loading="lazy"/>
               </div>
               <h3>EOL Inventory Management</h3>
             </a>
             <a href="../e-waste-management/" class="evr-related-card">
               <div class="evr-related-icon">
-                <img src="../../assets/E waste management.svg" alt="E-Waste Management"  loading="lazy"/>
+                <img src="../../assets/e-waste-management.svg" alt="E-Waste Management"  loading="lazy"/>
               </div>
               <h3>E-Waste Management</h3>
             </a>
