@@ -733,7 +733,7 @@ header.scrolled {
     display: block;
 }
 
-.diff-content h4 {
+.diff-content h3 {
     font-size: 0.95rem;
     font-weight: 700;
     margin-bottom: 4px;
@@ -1115,7 +1115,7 @@ header.scrolled {
     margin: 0 auto;
 }
 
-.tech-card h4 {
+.tech-card h3 {
     font-size: 0.85rem;
     font-weight: 700;
     color: var(--color-primary);
@@ -1355,7 +1355,7 @@ header.scrolled {
     height: 24px;
 
 }
-.why-bullet-content h4 {
+.why-bullet-content h3 {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 4px;
