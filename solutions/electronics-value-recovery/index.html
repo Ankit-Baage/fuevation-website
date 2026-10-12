@@ -213,7 +213,16 @@
     <div class="evr-hero-visual">
 
       <img
-        src="../../assets/maximizing-value-across-the-electronics.webp"
+        src="../../assets/maximizing-value-across-the-electronics-600.webp"
+        srcset="
+          ../../assets/maximizing-value-across-the-electronics-400.webp 400w,
+          ../../assets/maximizing-value-across-the-electronics-600.webp 600w,
+          ../../assets/maximizing-value-across-the-electronics-850.webp 850w
+        "
+        sizes="(max-width: 767px) 300px, (max-width: 1024px) 380px, 500px"
+        width="850"
+        height="850"
+        fetchpriority="high"
         alt="Electronics Lifecycle Visual Donut"
         class="evr-hero-donut-img"
 
