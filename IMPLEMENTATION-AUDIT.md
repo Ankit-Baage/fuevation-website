@@ -267,3 +267,39 @@ Scripted check of every field in `Solutions Page - Content.docx` and `Addition 7
 - G6 ✅ CTA labels: **decided 2026-10-10: keep "Talk to Our Experts"** (intentional deviation from doc "Talk to Fuevation").
 - G11 🟡 Hero not WebP: inventory-liquidation (`liquedation.png`), parts-harvesting (`electronics-part-harvesting.png`). Needs image conversion.
 - Not script-checkable: UI layout instructions (card counts per row, outcome band, accordion behaviour) and MOAT content: review visually.
+
+---
+
+## 10. Asset, accessibility and performance pass (2026-10-12)
+
+Merged via PRs #1, #2 and #3. Driven by a Lighthouse run on the home page and solution pages.
+
+### 10.1 Asset filenames (PR #1, PR #2)
+
+| Commit | Change |
+|---|---|
+| `b8b0bb9` | 🔧 Fixed icon casing (EPR, retailers) so icons load on case-sensitive hosts; value-recovery page points at exact asset names. |
+| `7ff0d28` | 🔧 Renamed all 230 assets with spaces / `&` / brackets / non-ASCII to lowercase kebab-case (e.g. `1 75 million.svg` → `1-75-million.svg`, `&` → `and`). Every reference rewritten (raw, %-encoded, absolute og:image URLs) in HTML, CSS, JS and docs. Name collisions get an `-alt` suffix. Fixed electronics-refurbishment icon that referenced a non-existent capitalised file. |
+
+This resolves the §8 open item "og:image `.webp` files with spaces in names" (names are now URL-safe; the WebP vs JPG preview note still applies).
+
+### 10.2 Accessibility (PR #2)
+
+| Commit | Change |
+|---|---|
+| `af21c8e` | 🔧 Home page heading order: three sections jumped h2 → h4 (What Makes Fuevation Different, technology cards, Why Organizations Choose Fuevation). Promoted to h3; CSS retargeted in `index.css` so visuals are unchanged. |
+
+### 10.3 Performance (PR #2, PR #3)
+
+| Commit | Change |
+|---|---|
+| `428671f` | 🔧 Responsive WebP for home hero donut (was 288 KiB) and section-2 map (was 250 KiB) with `srcset`/`sizes`, `width`/`height` (no CLS), `fetchpriority="high"` on donut (LCP), `loading="lazy"` on map. Originals kept for og:image. Also applied on electronics-value-recovery. |
+| `512730b` | 🔧 Tuned `sizes` to measured rendered widths per breakpoint; more variants (donut 300/400/500/600/760/850w, map 380/480/700/940/1254w); stronger compression (donut q62, map q68); dropped unused map 800w. |
+| `ce66c02` | 🔧 Removed ~1.5 s of render-blocking requests on all 14 pages: Google Fonts trimmed to Poppins 400–800 only (Outfit, Plus Jakarta Sans and 300 were unused) and loaded non-blocking (preload + `media="print"` swap + `<noscript>`); `analytics.js` loaded `async`; removed duplicate `main.js` in `index.html` `<head>` (it ran twice). `expert-contact.css` stays blocking (styles above-the-fold button). |
+| `cb08668` | 🔧 `main.js` nav scroll spy now uses `IntersectionObserver` instead of reading `offsetTop`/`offsetHeight` on every scroll (Lighthouse forced reflow). Rebuilt on debounced resize; nav classes only change when active section changes. |
+| `7b7cb7b` | 🔧 Shortened critical request chain (was 690 ms, 3 levels): `components/header.html` and `footer.html` preloaded from each page `<head>` (`as="fetch" crossorigin`, verified reused by `fetch()`); `components.js` skips components with no slot on the page, so the unused `cta.html` request is gone. |
+
+**Still open after this pass**
+- G11 🔧 (2026-10-14): parts-harvesting hero now `electronics-part-harvesting.webp` (209 KB, was 2.4 MB PNG). inventory-liquidation hero was already `liquedation.webp`. og:image on both still PNG (kept for LinkedIn/WhatsApp support).
+- og:image still WebP; export 1200×630 JPGs for LinkedIn/WhatsApp.
+- A1–A4 analytics items unchanged.
