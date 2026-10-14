@@ -4,6 +4,19 @@ Marketing website for Fuevation — electronics lifecycle, value recovery, and s
 
 **Live site:** https://ankit-baage.github.io/fuevation-website/
 
+## Recent changes
+
+**2026-10-14** ([#4](https://github.com/Ankit-Baage/fuevation-website/pull/4))
+- Parts Harvesting hero now WebP (209 KB, was 2.4 MB PNG): [view page](https://ankit-baage.github.io/fuevation-website/solutions/parts-harvesting/)
+
+**2026-10-12** ([#1](https://github.com/Ankit-Baage/fuevation-website/pull/1), [#2](https://github.com/Ankit-Baage/fuevation-website/pull/2), [#3](https://github.com/Ankit-Baage/fuevation-website/pull/3))
+- Asset files renamed to URL-safe kebab-case; fixed icons that did not load on GitHub Pages
+- Home page heading order fixed for accessibility
+- Responsive, compressed WebP for the home hero and map images: [view home](https://ankit-baage.github.io/fuevation-website/)
+- Fonts and analytics no longer block page rendering
+- Smoother nav scroll highlighting (no forced reflow)
+- Header/footer preloaded so they appear sooner
+
 ## Pages
 
 - **Home** — [`index.html`](index.html)
