@@ -1,2 +1,11 @@
 ﻿*.docx
 ~$*
+
+# --- Local-only SEO automation (never push to the company repo) ---
+/seo_tool/
+__pycache__/
+*.py[cod]
+/seo_reports/
+/.seo-backups/
+/Fuevation_SEO_Master_Workbook*.xlsx
+
