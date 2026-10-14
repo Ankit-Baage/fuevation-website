@@ -17,8 +17,6 @@ Marketing website for Fuevation — electronics lifecycle, value recovery, and s
 - Smoother nav scroll highlighting (no forced reflow)
 - Header/footer preloaded so they appear sooner
 
-Full details: [`IMPLEMENTATION-AUDIT.md`](IMPLEMENTATION-AUDIT.md) (section 10).
-
 ## Pages
 
 - **Home** — [`index.html`](index.html)
