@@ -1728,6 +1728,31 @@ footer {
 .footer-contact-details a {
     /* color: var(--color-bg-white); */
     font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.footer-contact-details .footer-address-link {
+    font-weight: normal;
+}
+
+/* Hover/focus highlight for every text link in the footer */
+footer .footer-links a:hover,
+footer .footer-links a:focus-visible,
+footer .footer-contact-details a:hover,
+footer .footer-contact-details a:focus-visible,
+footer .footer-legal-links a:hover,
+footer .footer-legal-links a:focus-visible {
+    color: var(--color-accent);
+}
+
+footer .footer-logo {
+    display: inline-block;
+    transition: var(--transition-smooth);
+}
+
+footer .footer-logo:hover,
+footer .footer-logo:focus-visible {
+    opacity: 0.8;
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
