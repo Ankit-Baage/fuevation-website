@@ -6,6 +6,11 @@ Marketing website for Fuevation — electronics lifecycle, value recovery, and s
 
 ## Recent changes
 
+**2026-10-15 18:38 IST — Rollback**
+- Code restored to its state at `8c6b2ef`, before the SEO keyword changes
+- Cause: commit `1b9e86e` by **manisha-mobi** (2026-10-14 18:43 IST), "Add SEO keywords from Keyword Master to solution pages", added templated keyword-stuffing sentences and `meta keywords` tags to all 10 solution pages
+- Also reverted the commit that followed it, `109df57` by Ankit Baage (2026-10-15 13:52 IST), the last commit before the rollback: clean URLs, footer solution links, nav color flash fix
+
 **2026-10-14** ([#4](https://github.com/Ankit-Baage/fuevation-website/pull/4))
 - Parts Harvesting hero now WebP (209 KB, was 2.4 MB PNG): [view page](https://ankit-baage.github.io/fuevation-website/solutions/parts-harvesting/)
 
