@@ -1742,7 +1742,7 @@ footer .footer-contact-details a:hover,
 footer .footer-contact-details a:focus-visible,
 footer .footer-legal-links a:hover,
 footer .footer-legal-links a:focus-visible {
-    color: var(--color-accent);
+    color: var(--color-bg-white);
 }
 
 footer .footer-logo {
