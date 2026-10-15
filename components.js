@@ -105,11 +105,11 @@
 
       // Normalize hash anchor targets for root vs inner subfolder pages
       if (isIndex) {
-        html = html.replace(/href="\/#/g, 'href="#');
+        html = html.replace(/href="\/index\.html#/g, 'href="#');
       }
 
-      // Resolve root-relative links (including "/" and "/#anchor") against the site base
-      html = html.replace(/(href|src)="\/(?=[A-Za-z#"])/g, `$1="${BASE}`);
+      // Resolve root-relative links against the site base
+      html = html.replace(/(href|src)="\/(?=[A-Za-z])/g, `$1="${BASE}`);
 
       const el = document.querySelector(selector);
       if (el) {
@@ -125,11 +125,6 @@
   function setActiveNavLink(container) {
     const links = container.querySelectorAll(".nav-link");
     links.forEach((link) => {
-      // Section anchors (#about etc.) are handled by the scroll-spy in main.js
-      if (link.hash) {
-        link.classList.remove("active");
-        return;
-      }
       const linkPath = new URL(link.href, window.location.origin).pathname;
       
       // Compare path exactness or trailing-slash match
