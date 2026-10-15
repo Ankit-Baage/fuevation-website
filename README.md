@@ -6,6 +6,14 @@ Marketing website for Fuevation — electronics lifecycle, value recovery, and s
 
 ## Recent changes
 
+**2026-10-15 — Clean URLs, footer links, nav fix** (re-applied after the rollback)
+- Clean URLs with no `.html`: home is `/`, Solutions overview moved to [`/solutions/`](https://ankit-baage.github.io/fuevation-website/solutions/) (old `solutions.html` redirects)
+- Footer links go to the Solutions overview and each solution page: [view footer](https://ankit-baage.github.io/fuevation-website/#site-footer)
+- Fixed nav links flashing orange before turning blue on the home page
+
+**2026-10-15** ([#7](https://github.com/Ankit-Baage/fuevation-website/pull/7))
+- SEO keywords added to the `<meta name="keywords">` tag of all 10 solution pages (no page content changed)
+
 **2026-10-15 18:38 IST — Rollback**
 - Code restored to its state at `8c6b2ef`, before the SEO keyword changes
 - Cause: commit `1b9e86e` by **manisha-mobi** (2026-10-14 18:43 IST), "Add SEO keywords from Keyword Master to solution pages", added templated keyword-stuffing sentences and `meta keywords` tags to all 10 solution pages
@@ -25,7 +33,7 @@ Marketing website for Fuevation — electronics lifecycle, value recovery, and s
 ## Pages
 
 - **Home** — [`index.html`](index.html)
-- **Solutions overview** — [`solutions.html`](solutions.html)
+- **Solutions overview** — [`solutions/index.html`](solutions/index.html) → `/solutions/`
 - **Solution pages** — [`solutions/`](solutions/)
   - Battery Recycling
   - E-Waste Management
@@ -42,7 +50,7 @@ Marketing website for Fuevation — electronics lifecycle, value recovery, and s
 
 ```
 index.html            Home page
-solutions.html        Solutions overview
+solutions/index.html  Solutions overview (/solutions/)
 solutions/<name>/     Individual solution pages
 components/           Shared header, footer, CTA (loaded by components.js)
 expert-contact/       "Talk to Our Experts" contact modal
