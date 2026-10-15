@@ -12,7 +12,7 @@ Audit of hero and banner images across all 12 pages of the Fuevation website.
 | # | Page | Hero heading | Image (`assets/`) | Format | Size | Dimensions |
 |---|---|---|---|---|---|---|
 | 1 | Home `index.html` | Maximizing Value Across the Electronics Lifecycle | `Maximizing Value Across the Electronics.webp` | WebP | 288 KB | 850×850 |
-| 2 | Solutions `solutions.html` | Solve Every Electronics Lifecycle Challenge… | `Solve Every Electronics Lifecycle Challenge with the Right Recovery Solution.webp` | WebP | 191 KB | 850×850 |
+| 2 | Solutions `solutions/index.html` | Solve Every Electronics Lifecycle Challenge… | `Solve Every Electronics Lifecycle Challenge with the Right Recovery Solution.webp` | WebP | 191 KB | 850×850 |
 | 3 | Battery Recycling | Battery Recovery & Responsible Recycling | `Battery Recovery & Responsible Recycling.webp` | WebP | 190 KB | 850×850 |
 | 4 | E-Waste Management | Corporate E-Waste Management & Responsible Recycling | `Corporate E-Waste Management & Responsible Recycling.webp` | WebP | 538 KB | 1273×1236 |
 | 5 | Electronics Refurbishment | Electronics Refurbishment & Repair | `Electronics Refurbishment & Repair.webp` | WebP | 230 KB | 800×800 |
