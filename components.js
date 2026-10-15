@@ -121,14 +121,25 @@
     }
   }
 
-  // Highlight exact link match in dynamic header
+  // Highlight the header link matching the current page AND the URL hash.
+  // Every nav link points at the same homepage path (/index.html#...), so
+  // comparing the path alone marked ALL links active on the homepage - the
+  // whole menu flashed orange until the scroll-spy in main.js cleared it.
   function setActiveNavLink(container) {
     const links = container.querySelectorAll(".nav-link");
+    const currentHash = window.location.hash;
     links.forEach((link) => {
-      const linkPath = new URL(link.href, window.location.origin).pathname;
-      
-      // Compare path exactness or trailing-slash match
-      if (linkPath === currentPath || (currentPath !== basePath && linkPath !== basePath && currentPath.startsWith(linkPath))) {
+      const linkUrl = new URL(link.href, window.location.origin);
+      const isSamePage =
+        linkUrl.pathname === currentPath ||
+        (currentPath !== basePath &&
+          linkUrl.pathname !== basePath &&
+          currentPath.startsWith(linkUrl.pathname));
+
+      // Only the link for the hash in the URL bar is active on load
+      // (e.g. /#about). With no hash nothing is active yet and the
+      // scroll-spy in main.js owns the highlight from then on.
+      if (isSamePage && linkUrl.hash === currentHash) {
         link.classList.add("active");
       } else {
         link.classList.remove("active");

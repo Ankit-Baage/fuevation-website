@@ -191,6 +191,18 @@ document.addEventListener("components-loaded", function () {
 
   function setActive(id) {
     if (id === activeId) return;
+    // Keep the current highlight when the visible section has no matching
+    // nav link (e.g. the #hero section at the top of the homepage). Clearing
+    // it there flipped the correct link from orange back to blue after load.
+    var hasNavLink = false;
+    navLinks.forEach(function (link) {
+      var href = link.getAttribute("href");
+      var hashIndex = href ? href.indexOf("#") : -1;
+      if (hashIndex !== -1 && href.substring(hashIndex + 1) === id) {
+        hasNavLink = true;
+      }
+    });
+    if (!hasNavLink) return;
     activeId = id;
     navLinks.forEach(function (link) {
       link.classList.remove("active");

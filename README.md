@@ -62,4 +62,4 @@ Hosted on GitHub Pages from the `main` branch (root). Every push to `main` redep
 
 Use relative paths for assets and links (e.g. `assets/logo.png`, `../../assets/logo.png` in solution pages), not root-absolute ones (`/assets/logo.png`) — the site is served under the `/fuevation-website/` subpath. File names are case-sensitive on GitHub Pages.
 testing new branch.
-update link issues
+update link issues on footer also remove .html from url and fied the navlink colour gtitch
