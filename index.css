@@ -196,7 +196,6 @@ header.scrolled {
     font-weight: bold;
     color: var(--color-primary);
     font-family: "Poppins", sans-serif;
-
     position: relative;
     padding: 5px 0;
     transition: var(--transition-smooth);
