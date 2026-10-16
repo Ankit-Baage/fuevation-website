@@ -612,3 +612,19 @@ footer {
     display: none;
   }
 }
+
+/* ===== Hero desktop (lg+): content left, image right, pushed to container edges ===== */
+@media (min-width: 1025px) {
+  .excess-hero-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+  }
+  .excess-hero-content { flex: 0 1 620px; }
+  .excess-hero-visual {
+    flex: 0 0 min(500px, 44vw);
+    justify-content: flex-end;
+  }
+}

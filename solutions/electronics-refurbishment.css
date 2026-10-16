@@ -611,3 +611,26 @@ footer {
     display: none;
   }
 }
+
+/* ===== Hero desktop (lg+): content left, image right, pushed to container edges ===== */
+@media (min-width: 1025px) {
+  .refurb-hero-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+  }
+  .refurb-hero-content { flex: 0 1 620px; }
+  .refurb-hero-visual {
+    flex: 0 0 min(500px, 44vw);
+    justify-content: flex-end;
+  }
+  .refurb-hero-img-box-img { object-position: right center; }
+  /* Heading locked to three lines; font scales so longest line fits */
+  .refurb-hero-content h1 { font-size: clamp(2.4rem, 4vw, 3.2rem); }
+  .refurb-hero-line {
+    display: block;
+    white-space: nowrap;
+  }
+}

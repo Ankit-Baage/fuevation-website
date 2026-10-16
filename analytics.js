@@ -1,5 +1,5 @@
 // =====================================================
-// ANALYTICS.JS — Google Tag Manager + GA4 event tracking
+// ANALYTICS.JS - Google Tag Manager + GA4 event tracking
 // =====================================================
 // Load async, as high in <head> as possible (not render-blocking):
 //   <script src="/analytics.js" async></script>
@@ -105,7 +105,7 @@
   }
 
   // =====================================================
-  // CLICK TRACKING (delegated — works for components
+  // CLICK TRACKING (delegated - works for components
   // loaded later by components.js and the contact modal)
   // =====================================================
   var CTA_SELECTOR = [
@@ -124,14 +124,20 @@
       // Contact options: tel: / mailto:
       var contactLink = target.closest("a[href^='tel:'], a[href^='mailto:']");
       if (contactLink) {
-        var method = contactLink.getAttribute("href").indexOf("tel:") === 0 ? "phone" : "email";
+        var method =
+          contactLink.getAttribute("href").indexOf("tel:") === 0
+            ? "phone"
+            : "email";
         var location_ = ctaLocation(contactLink);
         if (location_ === "modal") {
           // No real form exists yet: a call/email click from the
           // "Talk to Our Experts" modal is treated as the submit.
           track("contact_form_submit", { contact_method: method });
         }
-        track("lead_generated", { contact_method: method, cta_location: location_ });
+        track("lead_generated", {
+          contact_method: method,
+          cta_location: location_,
+        });
         return;
       }
 
@@ -150,6 +156,6 @@
         }
       }
     },
-    true
+    true,
   );
 })();

@@ -389,6 +389,31 @@ header.scrolled {
 }
 
 /*=========================================
+ DESKTOP (lg+): content left, image right,
+ pushed to container edges
+=========================================*/
+
+@media (min-width:1025px) {
+
+    #hero .grid-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 48px;
+    }
+
+    #hero .hero-left {
+        flex: 0 1 620px;
+    }
+
+    #hero .hero-right {
+        flex: 0 0 min(500px, 44vw);
+        justify-content: flex-end;
+    }
+}
+
+/*=========================================
  MOBILE
 =========================================*/
 
@@ -1676,9 +1701,7 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-.footer-logo-box {
-    margin-bottom: 1.2rem;
-}
+
 
 .footer-logo-text {
     font-family: var(--font-family-headings);
@@ -1745,10 +1768,10 @@ footer .footer-legal-links a:focus-visible {
     color: var(--color-bg-white);
 }
 
-footer .footer-logo {
+/* footer .footer-logo {
     display: inline-block;
     transition: var(--transition-smooth);
-}
+} */
 
 footer .footer-logo:hover,
 footer .footer-logo:focus-visible {

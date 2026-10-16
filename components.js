@@ -1,5 +1,5 @@
 // // =====================================================
-// // COMPONENTS.JS — Loads header, footer & init nav
+// // COMPONENTS.JS - Loads header, footer & init nav
 // // =====================================================
 // (async function () {
 //   const isIndex =
@@ -79,19 +79,21 @@
 //   document.dispatchEvent(new Event("components-loaded"));
 // })();
 // =====================================================
-// COMPONENTS.JS — Subfolder-Safe & SEO-Optimized Nav
+// COMPONENTS.JS - Subfolder-Safe & SEO-Optimized Nav
 // =====================================================
 (async function () {
   // Site base URL derived from this script's location (components.js lives at site root),
   // so the site works at a domain root or under a subpath like /fuevation-website/
-  const scriptSrc = (document.currentScript && document.currentScript.src) ||
+  const scriptSrc =
+    (document.currentScript && document.currentScript.src) ||
     new URL("components.js", window.location.href).href;
   const BASE = new URL("./", scriptSrc).href;
   const basePath = new URL(BASE).pathname;
 
   // Normalize current path to check for home route
   const currentPath = window.location.pathname;
-  const isIndex = currentPath === basePath || currentPath === basePath + "index.html";
+  const isIndex =
+    currentPath === basePath || currentPath === basePath + "index.html";
 
   async function loadComponent(selector, file) {
     // Skip the request entirely when the page has no slot for this component
@@ -100,7 +102,7 @@
       // Root-relative path guarantees correct fetch regardless of subfolder depth
       const res = await fetch(file);
       if (!res.ok) throw new Error("Failed to load " + file);
-      
+
       let html = await res.text();
 
       // Normalize hash anchor targets for root vs inner subfolder pages
@@ -131,9 +133,14 @@
         return;
       }
       const linkPath = new URL(link.href, window.location.origin).pathname;
-      
+
       // Compare path exactness or trailing-slash match
-      if (linkPath === currentPath || (currentPath !== basePath && linkPath !== basePath && currentPath.startsWith(linkPath))) {
+      if (
+        linkPath === currentPath ||
+        (currentPath !== basePath &&
+          linkPath !== basePath &&
+          currentPath.startsWith(linkPath))
+      ) {
         link.classList.add("active");
       } else {
         link.classList.remove("active");
@@ -145,7 +152,7 @@
   await Promise.all([
     loadComponent("#site-header", BASE + "components/header.html"),
     loadComponent("#site-footer", BASE + "components/footer.html"),
-    loadComponent("#cta-section", BASE + "components/cta.html")
+    loadComponent("#cta-section", BASE + "components/cta.html"),
   ]);
 
   // =====================================================
@@ -153,9 +160,13 @@
   // =====================================================
   const header = document.getElementById("site-header");
   if (header) {
-    window.addEventListener("scroll", () => {
-      header.classList.toggle("scrolled", window.scrollY > 50);
-    }, { passive: true });
+    window.addEventListener(
+      "scroll",
+      () => {
+        header.classList.toggle("scrolled", window.scrollY > 50);
+      },
+      { passive: true },
+    );
   }
 
   const mobileNavToggle = document.getElementById("mobile-nav-toggle");

@@ -179,6 +179,11 @@
   color: var(--color-primary);
   margin-bottom: 1.5rem;
 }
+.rl-problem-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
 
 /* ===== Our Approach ===== */
 .rl-approach-section {
@@ -616,5 +621,27 @@ footer {
 
   .breadcrumb-inner {
     display: none;
+  }
+}
+
+/* ===== Hero desktop (lg+): content left, image right, pushed to container edges ===== */
+@media (min-width: 1025px) {
+  .rl-hero-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+  }
+  .rl-hero-content { flex: 0 1 620px; }
+  .rl-hero-visual {
+    flex: 0 0 min(500px, 44vw);
+    justify-content: flex-end;
+  }
+  /* Heading locked to three lines; font scales so longest line fits */
+  .rl-hero-content h1 { font-size: clamp(2.2rem, 3.6vw, 3rem); }
+  .rl-hero-line {
+    display: block;
+    white-space: nowrap;
   }
 }

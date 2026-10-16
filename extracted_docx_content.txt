@@ -13,19 +13,19 @@ One opportunity I see is to make this website do more than present information. 
 That means it should not only explain your business but also reinforce your thought leadership, attract enterprise clients, support investor conversations, and improve search visibility. Over time, it can expand to include detailed case studies, white papers, ESG reports, and eventually dedicated sections for each business unit as Fuevation grows beyond MobiGarage. That approach will give you a website that remains relevant for years instead of needing another redesign as the company evolves.
 
 Website Architecture
-Hero — We maximize value across the electronics lifecycle. 
-The $40B Opportunity — The market is massive. 
-The Industry Challenges — Here's what's broken. 
-Reuse First. Recovery Always. — Our philosophy. 
-Introducing Fuevation — Who we are. 
-Our Capabilities — What we do. 
-Lifecycle Intelligence Framework — How we do it. 
-Technology Platform — Our differentiator. 
-Impact — Proof. 
-Trusted By — Credibility. 
-Leadership — The people behind it. 
-Insights — Thought leadership. 
-Let's Build Together — Call to action.
+Hero - We maximize value across the electronics lifecycle. 
+The $40B Opportunity - The market is massive. 
+The Industry Challenges - Here's what's broken. 
+Reuse First. Recovery Always. - Our philosophy. 
+Introducing Fuevation - Who we are. 
+Our Capabilities - What we do. 
+Lifecycle Intelligence Framework - How we do it. 
+Technology Platform - Our differentiator. 
+Impact - Proof. 
+Trusted By - Credibility. 
+Leadership - The people behind it. 
+Insights - Thought leadership. 
+Let's Build Together - Call to action.
 The homepage should tell about 80% of the story, while the remaining pages provide more depth.
 
 
@@ -219,7 +219,7 @@ Before a product is dismantled or recycled, we believe its highest potential sho
 This philosophy guides every decision we make. It helps our partners recover greater value, reduce waste, conserve natural resources, and build more sustainable businesses.
 Because the most sustainable product is the one that doesn't need to be manufactured again.
 
-I would give this section a distinct background color—perhaps a very light green tint—to make it feel like the heart of the brand.
+I would give this section a distinct background color-perhaps a very light green tint-to make it feel like the heart of the brand.
 
 What Makes Fuevation Different
 Technology-Led Decision Making
@@ -515,9 +515,9 @@ Operations & Partner Network
 
 
 At the bottom:
-Every number represents our commitment to one philosophy — Reuse First. Recovery Always.
+Every number represents our commitment to one philosophy - Reuse First. Recovery Always.
 
-SECTION 10 — Trusted Across the Electronics Ecosystem
+SECTION 10 - Trusted Across the Electronics Ecosystem
 This section should be almost entirely visual.
 Headline
 Trusted by Industry Leaders
@@ -548,7 +548,7 @@ Also, add investors backed by: STPI, SOSV, Shastra, Artesian, IPV and notable an
 
 
 
-SECTION 12 — Insights
+SECTION 12 - Insights
 This section is strategically important for SEO and thought leadership.
 
 Headline
@@ -580,7 +580,7 @@ This section will grow as you publish LinkedIn content and convert it into artic
 
 
 
-SECTION 13 — Final Call to Action
+SECTION 13 - Final Call to Action
 This is the most important CTA on the website.
 Keep it clean.
 No long paragraphs.
