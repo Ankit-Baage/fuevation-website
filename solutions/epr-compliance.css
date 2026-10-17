@@ -241,7 +241,7 @@
 /* ===== Solution Scope ===== */
 .epr-scope-section {
   padding: 1rem 0;
-  background: var(--color-bg-white);
+  background: var(--color-bg-light);
 }
 .epr-scope-grid {
   display: grid;
@@ -290,7 +290,7 @@
 /* ===== Business Outcomes ===== */
 .epr-outcomes-section {
   padding: 1rem 0;
-  background: var(--color-bg-light);
+  background: var(--color-bg-white);
 }
 .epr-outcomes-grid {
   display: grid;
@@ -339,7 +339,7 @@
 /* ===== Who This Is For / Industries ===== */
 .epr-industries-section {
   padding: 1rem 0;
-  background: var(--color-bg-white);
+  background: var(--color-bg-light);
 }
 .epr-industries-grid {
      max-width: 1280px;
@@ -393,7 +393,7 @@
 /* ===== Related Solutions ===== */
 .epr-related-section {
   padding: 1rem 0;
-  background: var(--color-bg-light);
+  background: var(--color-bg-white);
 }
 .epr-related-grid {
   display: grid;
